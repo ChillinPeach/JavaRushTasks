@@ -1,0 +1,23 @@
+Не думать о секундах…
+
+После 12:00 прошло secondsAfter12 секунд. Напиши код который считает сколько секунд прошло после 15:00.
+
+Пример:
+Метод getSecondsAfter15 вызывается с параметром 14442.
+
+Пример вывода:
+3642
+
+
+public class Solution {
+    public static void main(String[] args) {
+        System.out.println(getSecondsAfter15(14442));
+    }
+
+    public static int getSecondsAfter15(int secondsAfter12) {
+        int secondsAfter15 = secondsAfter12 - (3 * 60 * 60);
+        return secondsAfter15;
+    }
+}
+
+// 3642
